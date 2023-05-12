@@ -1,6 +1,7 @@
 var wrapper = document.getElementById("s-p");
 var clearButton = wrapper.querySelector("[data-action=clear]");
 var changeColorButton = wrapper.querySelector("[data-action=change-color]");
+var colorPalette = document.querySelector('.color-palette')
 var undoButton = wrapper.querySelector("[data-action=undo]");
 var savePNGButton = wrapper.querySelector("[data-action=png]");
 var saveJPGButton = wrapper.querySelector("[data-action=jpg]");
@@ -39,7 +40,7 @@ function resizeCanvas() {
   window.onresize = resizeCanvas;
   resizeCanvas();
   
-  // Download function
+// Download function
   function download(dataURL, filename) {
     var blob = dataURLToBlob(dataURL);
     var url = window.URL.createObjectURL(blob);
@@ -86,12 +87,11 @@ function resizeCanvas() {
   });
   
   changeColorButton.addEventListener("click", function (event) {
-    var r = Math.round(Math.random() * 255);
-    var g = Math.round(Math.random() * 255);
-    var b = Math.round(Math.random() * 255);
-    var color = "rgb(" + r + "," + g + "," + b +")";
-  
-    signaturePad.penColor = color;
+    if (colorPalette.style.display === "none") {
+      colorPalette.style.display = "block";
+    } else {
+      colorPalette.style.display = "none";
+    }
   });
   
   savePNGButton.addEventListener("click", function (event) {
