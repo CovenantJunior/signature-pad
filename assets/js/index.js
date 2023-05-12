@@ -88,7 +88,7 @@ function resizeCanvas() {
   
   changeColorButton.addEventListener("click", function (event) {
     if (colorPalette.style.display === "none") {
-      colorPalette.style.display = "block";
+      colorPalette.style.display = "flex";
     } else {
       colorPalette.style.display = "none";
     }
