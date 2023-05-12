@@ -44,4 +44,5 @@ function getTheme() {
 //save the theme to local storage
 function saveTheme(color) {
   localStorage.setItem("theme", color);
+  signaturePad.penColor = color;
 }

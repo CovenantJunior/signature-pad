@@ -10,7 +10,7 @@ var canvas = wrapper.querySelector("canvas");
 
 // Set backgroundColor for the signature pad
 var signaturePad = new SP(canvas, {
-    backgroundColor: '#ffffff' // white
+    backgroundColor: '#ffffff00' // white
 });
 
 // Adjust canvas coordinate space taking into account pixel ratio,
@@ -88,6 +88,9 @@ function resizeCanvas() {
   
   changeColorButton.addEventListener("click", function (event) {
     if (colorPalette.style.display === "none") {
+      colorPalette.style.display = "flex";
+    }
+    else if (colorPalette.style.display === "") {
       colorPalette.style.display = "flex";
     } else {
       colorPalette.style.display = "none";

@@ -162,7 +162,7 @@ button:hover {
 
 .color-palette {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   margin: 12px;
