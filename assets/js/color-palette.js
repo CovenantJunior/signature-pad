@@ -49,9 +49,7 @@ function saveTheme(color) {
   if (colorPalette.style.display === "none") {
      colorPalette.style.display = "flex";
   }
-  else if (colorPalette.style.display === "") {
-    colorPalette.style.display = "flex";
-  } else {
+  else {
     colorPalette.style.display = "none";
   }
 }
