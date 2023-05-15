@@ -45,4 +45,11 @@ function getTheme() {
 function saveTheme(color) {
   localStorage.setItem("theme", color);
   signaturePad.penColor = color;
+  // Close palette on color selection 
+  if (colorPalette.style.display === "none") {
+     colorPalette.style.display = "flex";
+  }
+  else {
+    colorPalette.style.display = "none";
+  }
 }
