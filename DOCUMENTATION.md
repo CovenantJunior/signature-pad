@@ -1,0 +1,168 @@
+# Signature Pad Documentation
+
+![Signature Pad](https://github.com/CovenantJunior/signature-pad/raw/master/assets/signature-pad-demo.gif)
+
+Signature Pad is a lightweight JavaScript library for adding a signature pad functionality to your web applications. It provides an intuitive interface for users to draw their signatures using a mouse, touch, or stylus input. This documentation will guide you through the installation, usage, and customization of Signature Pad.
+
+## Table of Contents
+
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [API Reference](#api-reference)
+4. [Customization](#customization)
+5. [Contributing](#contributing)
+6. [License](#license)
+
+## Installation
+
+You can install Signature Pad or include it directly in your HTML file by:
+
+### Git Installation
+
+To install Signature Pad using your terminal/HTTPS:
+1. Open your command line or terminal.
+2. Navigate to the directory where you want to clone the repository.
+3. Run the following command to clone the repository:
+```bash
+git clone https://github.com/CovenantJunior/signature-pad
+```
+
+4. Once the cloning process is complete, navigate into the cloned repository using the following command:
+```bash
+cd signature-pad
+```
+
+
+### SSH Installation
+
+To install Signature Pad using SSH:
+1. Open your command line or terminal.
+2. Navigate to the directory where you want to clone the repository.
+3. Run the following command to clone the repository:
+```bash
+git clone https://github.com/CovenantJunior/signature-pad
+```
+
+4. Once the cloning process is complete, navigate into the cloned repository using the following command:
+```bash
+cd signature-pad
+```
+
+### GitHub CLI Installation
+
+To install Signature Pad using your GitHub CLI:
+1. Open your command line or terminal.
+2. Navigate to the directory where you want to clone the repository.
+3. Run the following command to clone the repository:
+```bash
+gh repo clone CovenantJunior/signature-pad
+```
+
+4. Once the cloning process is complete, navigate into the cloned repository using the following command:
+```bash
+cd signature-pad
+```
+
+Now, you have successfully cloned the Signature Pad repository. To open it, you can use any text editor or integrated development environment (IDE) of your choice.
+
+For example, to open the repository in Visual Studio Code:
+```bash
+code .
+```
+
+## Usage
+To use Signature Pad, an HTML canvas element was created and initialize with the SP class. Here's an example of how to use Signature Pad:
+
+```bash
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signature Pad Demo</title>
+    <script src="path/to/signature_pad.js"></script>
+  </head>
+  <body>
+    <canvas id="signature-pad" width="400" height="200"></canvas>
+
+    <script>
+      // Get the canvas element
+      var canvas = document.getElementById('signature-pad');
+
+      // Create a new instance of SP
+      var signaturePad = new SP(canvas);
+
+      // Do something with the signature
+      function saveSignature() {
+        var dataURL = signaturePad.toDataURL();
+        // You can now send the dataURL to your server or process it further
+      }
+    </script>
+  </body>
+</html>
+```
+
+## API Reference
+Signature Pad provides a simple API to interact with the signature pad. Here are the main methods available:
+
+`new SP(canvas [, options])`
+`signaturePad.isEmpty(): boolean`
+`signaturePad.clear()`
+`signaturePad.fromDataURL(dataURL [, options [, callback]])`
+`signaturePad.toDataURL([type [, encoderOptions]])`
+`signaturePad.toData()`
+`signaturePad.fromData(pointGroupArray)`
+`signaturePad.off()`
+`signaturePad.on()`
+`signaturePad.onBegin(event)`
+`signaturePad.onEnd(event)`
+
+## Customization
+Signature Pad provides several options for customizing its behavior. These options can be passed as an object when creating a new instance of SP. Here are the available options:
+
+`backgroundColor (default: "rgb(255, 255, 255)")`
+`penColor (default: "rgb(0, 0, 0)")`
+`velocityFilterWeight (default: 0.7)`
+`minWidth (default: 0.5)`
+`maxWidth (default: 2.5)`
+`throttle (default: 16)`
+`minDistance (default: 5)`
+
+Example Usage:
+
+```bash
+    var signaturePad = new SignaturePad(canvas, {
+        backgroundColor: 'rgb(245, 245, 245)',
+        penColor: 'rgb(0, 0, 255)',
+        minWidth: 1,
+        maxWidth: 3,
+        throttle: 10,
+    });
+```
+
+
+## Contributing
+
+If you would like to contribute to Signature Pad, you can find the source code and contribution guidelines on the [GitHub repository](https://github.com/CovenantJunior/signature-pad). Contributions such as bug fixes, feature enhancements, and documentation improvements are welcome.
+
+## License
+
+Signature Pad is released under the MIT License. See the [LICENSE](https://github.com/CovenantJunior/signature-pad/blob/master/LICENSE) file for more details.
+
+## Compatibility
+
+Signature Pad is compatible with modern web browsers that support the HTML5 Canvas element and JavaScript. It works well on desktop and mobile devices, including touchscreens.
+
+## Examples and Demos
+
+To see Signature Pad in action and explore different usage scenarios, you can check out the examples and demos provided in the [GitHub repository](https://github.com/CovenantJunior/signature-pad). These examples demonstrate various features and customization options available with Signature Pad.
+
+## Additional Resources
+
+If you need further assistance or have specific questions about Signature Pad, you can refer to the following resources:
+
+- [GitHub Repository](https://github.com/CovenantJunior/signature-pad)
+- [GitHub Discussions](https://github.com/CovenantJunior/signature-pad/discussions)
+- [GitHub Wiki](https://github.com/CovenantJunior/signature-pad/wiki)
+
+Remember to keep an eye on the repository for any updates or announcements related to Signature Pad.
+
+Thank you for choosing Signature Pad! We hope it brings a seamless signature capture experience to your web applications. If you have any further questions or need assistance, feel free to reach out to the community or the project maintainers. Happy coding!
