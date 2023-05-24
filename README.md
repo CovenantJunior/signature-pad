@@ -1,5 +1,6 @@
 # Signature Pad
 
+🖋️ An elegant and easy-to-use signature pad for all your digital signing needs! 📝
 ![Signature Pad](https://github.com/CovenantJunior/signature-pad/blob/master/demo.gif)
 
 ## Badges
@@ -10,7 +11,6 @@ Add badges from somewhere like: [shields.io](https://shields.io/)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 [![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
 
-🖋️ An elegant and easy-to-use signature pad for all your digital signing needs! 📝
 
 Signature Pad is a lightweight JavaScript library for adding a signature pad functionality to your web applications. It provides an intuitive interface for users to draw their signatures using a mouse, touch, or stylus input. This documentation will guide you through the installation, usage, and customization of Signature Pad.
 
