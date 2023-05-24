@@ -1,6 +1,6 @@
 # Signature Pad Documentation
 
-![Signature Pad](https://github.com/CovenantJunior/signature-pad/raw/master/assets/signature-pad-demo.gif)
+![Signature Pad](https://repository-images.githubusercontent.com/640015149/94c4e46e-10b0-453f-a2bf-57a0c45a5f26)
 
 Signature Pad is a lightweight JavaScript library for adding a signature pad functionality to your web applications. It provides an intuitive interface for users to draw their signatures using a mouse, touch, or stylus input. This documentation will guide you through the installation, usage, and customization of Signature Pad.
 
