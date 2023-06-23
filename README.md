@@ -75,7 +75,7 @@ If you need further assistance or have specific questions about Signature Pad, y
 
 - [GitHub Repository](https://github.com/CovenantJunior/signature-pad)
 - [GitHub Discussions](https://github.com/CovenantJunior/signature-pad/discussions)
-- [GitHub Wiki](https://github.com/CovenantJunior/signature-pad/wiki)
+<!-- - [GitHub Wiki](https://github.com/CovenantJunior/signature-pad/wiki) -->
 
 Remember to keep an eye on the repository for any updates or announcements related to Signature Pad.
 
