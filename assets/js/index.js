@@ -10,7 +10,7 @@ var canvas = wrapper.querySelector("canvas");
 
 // Set backgroundColor for the signature pad
 var signaturePad = new SP(canvas, {
-    backgroundColor: '#ffffff00' // white
+    backgroundColor: '#ffffff00' // transparent
 });
 
 // Adjust canvas coordinate space taking into account pixel ratio,
