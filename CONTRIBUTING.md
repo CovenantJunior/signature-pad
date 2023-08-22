@@ -20,8 +20,8 @@ Outlined below are the instructions delineated for contributors prepared to lend
 
 4\. **Initiate a Pull Request (PR):** Subsequent to effecting changes, contributors should inaugurate a pull request from their forked repository to the primary repository. Within the pull request description, they can attach a label to the relevant issue they are addressing. This interlinks the pull request with the pertinent issue, streamlining the monitoring of progress.
 
-5\. **Assessment and Integration:** The primary repository's maintainers will scrutinize the pull request. If it aligns with expectations, they will endorse the pull request and integrate the amendments into the `main` branch of the central repository.
+5\. **Assessment and Integration:** The primary repository's maintainers will scrutinize the pull request. If it aligns with expectations, they will endorse the pull request and integrate the amendments into the `master` branch of the central repository.
 
 By adhering to these stipulated steps, contributors can seamlessly collaborate on the project, introduce innovative features, and rectify glitches within a structured framework.
 
-It's imperative to foster lucid communication, offer guidance on coding protocols and conventions, and uphold an inviting and all-encompassing environment for contributors. Flourishing open-source initiatives are contingent on the presence of an optimistic and cooperative community.
+It's imperative to foster clear communication, offer guidance on coding protocols and conventions, and uphold an inviting and all-encompassing environment for contributors. Flourishing open-source initiatives are contingent on the presence of an optimistic and cooperative community.
