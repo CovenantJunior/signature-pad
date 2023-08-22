@@ -58,7 +58,7 @@ To see Signature Pad in action and explore different usage scenarios, you can ch
 
 ## Contributing
 
-Contributions are more than welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. We appreciate your input and would love to collaborate with you. If you would like to contribute to Signature Pad, you can find the source code and contribution guidelines on the [CONTRIBUTION](https://github.com/CovenantJunior/signature-pad/blob/master/CONTRIBUTING.md)) page. Contributions such as bug fixes, feature enhancements, and documentation improvements are welcome.
+Contributions are more than welcome! If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request. We appreciate your input and would love to collaborate with you. If you would like to contribute to Signature Pad, you can find the source code and contribution guidelines on the [CONTRIBUTION](https://github.com/CovenantJunior/signature-pad/blob/master/CONTRIBUTING.md) page. Contributions such as bug fixes, feature enhancements, and documentation improvements are welcome.
 
 ## License
 
