@@ -36,7 +36,7 @@ Signature Pad was designed with simplicity in mind. You can integrate it into yo
 
 * [Usage](https://github.com/CovenantJunior/signature-pad/blob/master/DOCUMENTATION.md#usage)
 
-```// Now go ahead and let your users sign their life away!```
+```// Now go ahead and let your users sign that killer signature 👌!```
 
 
 ## API Reference
