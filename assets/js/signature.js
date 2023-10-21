@@ -281,10 +281,21 @@ var SP = (function () {
         if (typeof this.onBegin === "function") {
             this.onBegin(event);
         }
+        scribbleSound.play();
     };
     SP.prototype._strokeUpdate = function (event) {
-        var x = event.clientX;
-        var y = event.clientY;
+        var x;
+        var y
+        if (event && event.clientX !== undefined) {
+            x = event.clientX;
+        } else {
+            x = false;
+        }
+        if (event && event.clientY !== undefined) {
+            y = event.clientY;
+        } else {
+            y = false;
+        }
         var point = this._createPoint(x, y);
         var lastPointGroup = this._data[this._data.length - 1];
         var lastPoints = lastPointGroup.points;
@@ -311,6 +322,7 @@ var SP = (function () {
         if (typeof this.onEnd === "function") {
             this.onEnd(event);
         }
+        scribbleSound.pause();
     };
     SP.prototype._handleMouseEvents = function () {
         this._mouseButtonDown = false;
