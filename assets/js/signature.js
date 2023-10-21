@@ -280,8 +280,7 @@ var SP = (function () {
         this._strokeUpdate(event);
         if (typeof this.onBegin === "function") {
             this.onBegin(event);
-        }
-        scribbleSound.play();
+	}
     };
     SP.prototype._strokeUpdate = function (event) {
         var x;
@@ -316,6 +315,7 @@ var SP = (function () {
                 y: point.y
             });
         }
+	scribbleSound.play();
     };
     SP.prototype._strokeEnd = function (event) {
         this._strokeUpdate(event);
