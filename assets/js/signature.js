@@ -314,8 +314,8 @@ var SP = (function () {
                 x: point.x,
                 y: point.y
             });
-        }
-	scribbleSound.play();
+            scribbleSound.play();
+	}
     };
     SP.prototype._strokeEnd = function (event) {
         this._strokeUpdate(event);
