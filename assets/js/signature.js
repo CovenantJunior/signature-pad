@@ -308,13 +308,13 @@ var SP = (function () {
             }
             else if (curve) {
                 this._drawCurve({ color: color, curve: curve });
+		scribbleSound.play();
             }
             lastPoints.push({
                 time: point.time,
                 x: point.x,
                 y: point.y
             });
-            scribbleSound.play();
 	}
     };
     SP.prototype._strokeEnd = function (event) {
