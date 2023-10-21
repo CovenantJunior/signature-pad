@@ -150,6 +150,19 @@ button:hover {
   min-height: 360px;
 }
 
+.start {
+  min-height: 360px;
+  text-align: center;
+  margin: 0% auto;
+  z-index: 1000;
+  position: relative;
+  cursor: pointer;
+}
+
+.start button {
+  margin: 30%;
+}
+
 .s-p--actions {
   overflow: hidden;
 }
