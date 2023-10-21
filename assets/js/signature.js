@@ -285,7 +285,7 @@ var SP = (function () {
     };
     SP.prototype._strokeUpdate = function (event) {
         var x;
-        var y
+        var y;
         if (event && event.clientX !== undefined) {
             x = event.clientX;
         } else {
