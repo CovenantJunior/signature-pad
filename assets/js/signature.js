@@ -308,7 +308,7 @@ var SP = (function () {
             }
             else if (curve) {
                 this._drawCurve({ color: color, curve: curve });
-		scribbleSound.play();
+		        scribbleSound.play();
             }
             lastPoints.push({
                 time: point.time,
