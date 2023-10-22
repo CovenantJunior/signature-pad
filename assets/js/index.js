@@ -7,6 +7,7 @@ var savePNGButton = wrapper.querySelector("[data-action=png]");
 var saveJPGButton = wrapper.querySelector("[data-action=jpg]");
 var saveSVGButton = wrapper.querySelector("[data-action=svg]");
 var canvas = wrapper.querySelector("canvas");
+const knockSound = document.getElementById("knockSound");
 const scribbleSound = document.getElementById("scribbleSound");
 
 // Set backgroundColor for the signature pad

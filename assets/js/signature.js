@@ -168,6 +168,7 @@ var SP = (function () {
         this._ctx = canvas.getContext("2d");
         this.clear();
         this._handleMouseDown = function (event) {
+            knockSound.play();
             if (event.which === 1) {
                 _this._mouseButtonDown = true;
                 _this._strokeBegin(event);
@@ -185,6 +186,7 @@ var SP = (function () {
             }
         };
         this._handleTouchStart = function (event) {
+            knockSound.play();
             event.preventDefault();
             if (event.targetTouches.length === 1) {
                 var touch = event.changedTouches[0];
@@ -280,7 +282,7 @@ var SP = (function () {
         this._strokeUpdate(event);
         if (typeof this.onBegin === "function") {
             this.onBegin(event);
-	}
+	    }
     };
     SP.prototype._strokeUpdate = function (event) {
         var x;
